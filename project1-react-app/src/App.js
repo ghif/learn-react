@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Container from './Container.js';
+import Box from './Box.js';
 import Link from './Link.js';
 import Button from './Button.js';
 import Input from './Input.js';
@@ -32,12 +32,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="React logo" />
-        <Container>
+        <Box>
           <Link href="https://react-tutorial.app">Shop online</Link>
           <br/>
           <Input type="email" placeholder="Email" />
           <Button>Buy</Button>
-        </Container>
+        </Box>
       </header>
       
     </div>
