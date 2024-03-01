@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
-import Box from './Box.js';
-import Link from './Link.js';
-import Button from './Button.js';
+// import Box from './Box.js';
+// import Link from './Link.js';
+// import Button from './Button.js';
 import Input from './Input.js';
 
 import Home from './Home.js';
 import Login from './Login.js';
+
 
 import {useEffect, useState}  from 'react';
 
@@ -60,6 +61,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home loggedIn={loggedIn} email={email} />} />
           <Route path="/login" element={<Login setLoggedIn={setLoggedIn} setEmail={setEmail} />} />
+          {/* <Route path="/input" element={<Input />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
