@@ -1,29 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Welcome from './components/Welcome';
 import Form from './components/Form';
 
+// import ClassCounter from './components/ClassCounter';
+import Counter from './components/Counter';
+import CounterTwo from './components/CounterTwo';
+import ObjectState from './components/ObjectState';
+import CounterFour from './components/CounterFour';
+import ClassCounterOne from './components/ClassCounterOne';
+import EffectCounterOne from './components/EffectCounterOne';
+import ClassMouse from './components/ClassMouse';
+import EffectMouse from './components/EffectMouse';
+import MouseContainer from './components/MouseContainer';
+
+import { useContext } from 'react';
+
 function App() {
+  const username = useContext("ghifary")
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
 
     <div className="App">
-      <Form></Form>
+      {/* <Form></Form> */}
+      {/* Hello Rumi */}
+      <Welcome />
+      {/* <ClassCounter /> */}
+      <Counter />
+      <CounterTwo />
+      <ObjectState />
+      <CounterFour />
+      {/* <ClassCounterOne /> */}
+      <EffectCounterOne />
+      {/* <ClassMouse /> */}
+      {/* <EffectMouse /> */}
+      <MouseContainer />
     </div>
   );
 }
