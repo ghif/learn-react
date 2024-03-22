@@ -30,9 +30,9 @@ import ImageSlider from "./components/image-slider"
 function App() {
   return (
     <div className="App">
-      {/* <Accordian /> */}
-      {/* <RandomColor /> */}
-      {/* <StarRating noOfStars={10}/> */}
+      <Accordian /> 
+      <RandomColor />
+      <StarRating noOfStars={10}/>
       <ImageSlider url="https://picsum.photos/v2/list" page={"1"} limit={"5"} />
     </div>
   );
